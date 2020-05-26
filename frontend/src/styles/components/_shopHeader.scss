@@ -1,0 +1,47 @@
+.shop-header {
+    background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/pf-s7-kaboompics6-1747.jpg?bg=transparent&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-3.1.0&mark=&markalpha=90&markpad=13&markscale=10&markx=25&q=65&usm=15&vib=3&w=1400&s=426b3841048e98a5d338a0f456d21d7f");
+    background-size: cover;
+    height: 80vh;
+    @include for-narrow-layout {
+        height: 85vh;
+    }
+    @include for-normal-layout {
+        height: 65vh;
+    }
+
+    .main-content {
+        height: 80vh;
+
+        background-color: rgba(#020202, 0.5);
+        padding: 40px;
+        @include for-narrow-layout {
+            height: 85vh;
+        }
+        @include for-normal-layout {
+            height: 65vh;
+        }
+
+        .headline {
+            text-align: center;
+            color: $clr5;
+            font-size: 70px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 14px;
+            margin-bottom: 10px;
+        }
+        .logo {
+            width: 140px;
+            margin-right: 40px;
+        }
+
+        .main-text {
+            text-align: center;
+            font-size: 28px;
+            letter-spacing: 5px;
+            line-height: 38px;
+            color: white;
+            margin-bottom: 20px;
+        }
+    }
+}

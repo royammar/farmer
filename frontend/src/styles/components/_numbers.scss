@@ -1,0 +1,59 @@
+.numbers {
+    max-width: 100vw;
+    flex-direction: column;
+    margin-bottom: 50px;
+    height: 100%;
+    @include for-normal-layout {
+        flex-direction: row;
+        max-width: 75vw;
+        height: 30vh;
+
+    }
+    .carrot {
+        background-image: url("../imgs/carrot.png");
+        position: absolute;
+        z-index: 2;
+        background-repeat: no-repeat;
+        top:var(--scrollY) ;
+        height: 100vh;
+        width: 46vw;
+        right: 0px;
+        animation: myfirst 5s ;
+        @include for-normal-layout {
+            width: 34vw;
+
+        }
+        transition: top .5s ease;
+    }
+    .card {
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+        .number {
+            font-size: 60px;
+            color: $clr4;
+            font-weight: bold;
+            text-shadow: 4px 4px $clr2;
+        }
+        .headline {
+            font-weight: bold;
+            font-size: 20px;
+        }
+    }
+}
+
+
+.move{
+    
+}
+
+
+
+
+  @keyframes myfirst {
+    0%   { top: calc(var(--scrollY)-20px)}
+    25%  {  top: calc(var(--scrollY)-40px)}
+    50%  {  top: calc(var(--scrollY)-60px)}
+    75%  {  top: calc(var(--scrollY)-80px)}
+    100% {  top: calc(var(--scrollY)-100px)}
+  }

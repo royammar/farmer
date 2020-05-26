@@ -1,0 +1,28 @@
+.container {
+    // max-width: $normal-breakpoint;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    @include for-normal-layout {
+        min-width: $normal-breakpoint;
+    }
+    @include for-narrow-layout {
+        min-width: $narrow-breakpoint;
+    }
+    @include for-mobile-layout {
+        max-width: $mobile-breakpoint;
+    }
+}
+
+
+
+
+
+// GRIDS
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-gap: 10px;
+}

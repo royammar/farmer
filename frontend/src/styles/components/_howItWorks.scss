@@ -1,0 +1,57 @@
+.steps {
+    background: rgba(255, 255, 255, 0.7);
+    height: 100%;
+   padding: 30px;
+    .main-headline {
+        padding: 30px;
+        font-family: oswald;
+        color: $clr4;
+        text-align: center;
+        font-size: 70px;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 80px;
+        @include for-normal-layout {
+            margin-bottom: 40px;
+            position: relative;
+            top: -50px;
+        }
+    }
+
+    .cards {
+        @include for-normal-layout {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        img {
+            max-width: 150px;
+            @include for-normal-layout {
+                max-width: 250px;
+                position: relative;
+                top: -120px;
+            }
+        }
+
+        .card {
+            background-color: $clr1;
+            background: rgba(130, 204, 40, 0.2);
+            max-height: 700px;
+            max-width: 400px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            p {
+                @include for-normal-layout {
+                    position: relative;
+                    top: -70px;
+                }
+            }
+            @include for-normal-layout {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
