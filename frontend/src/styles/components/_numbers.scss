@@ -44,9 +44,10 @@
 
 
   @keyframes myfirst {
-    0%   { top: calc(var(--scrollY)-20px)}
-    25%  {  top: calc(var(--scrollY)-40px)}
-    50%  {  top: calc(var(--scrollY)-60px)}
-    75%  {  top: calc(var(--scrollY)-80px)}
-    100% {  top: calc(var(--scrollY)-100px)}
+    0%   { top: calc(calc(var(--scrollY) - 20px))}
+    25%  {  top: calc(calc(var(--scrollY) - 40px))}
+    50%  {  top: calc(calc(var(--scrollY) - 60px))}
+    75%  {  top: calc(calc(var(--scrollY) - 80px))}
+    100% {  top: calc(calc(var(--scrollY) - 100px))}
   }
+
