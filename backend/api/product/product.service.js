@@ -29,15 +29,12 @@ async function remove(productId) {
 
 
 async function add(product) {
-    product.byUserId = ObjectId(product.byUserId);
-    product.aboutUserId = ObjectId(product.aboutUserId);
-
     const collection = await dbService.getCollection('product')
     try {
         await collection.insertOne(product);
         return product;
     } catch (err) {
-        console.log(`ERROR: cannot insert user`)
+        console.log(`ERROR: cannot insert product`)
         throw err;
     }
 }

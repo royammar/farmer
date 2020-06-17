@@ -1,5 +1,5 @@
 const shopService = require('./shop.service')
-  
+
 // async function getShops(req, res) {
 //     console.log(req.query);
 //     const shops = await shopService.query(req.query)
@@ -19,12 +19,8 @@ async function updateShop(req, res) {
 }
 
 async function addShop(req, res) {
-    
     let shop = req.body;
-    
     shop = await shopService.add(shop)
-    
-    console.log('shop',shop);
     res.send(shop)
 }
 

@@ -5,8 +5,6 @@ const productService = require('./product.service')
 
 async function getProducts(req, res) {
    
-    
-    
     try {
         const products = await productService.query(req.query)
         
@@ -26,11 +24,10 @@ async function deleteProduct(req, res) {
 
 async function addProduct(req, res) {
     var product = req.body;
-    product.byUserId = req.session.user._id;
+    console.log(product,'rpror');
+    
     product = await productService.add(product)
-    product.byUser = req.session.user;
-    // TODO - need to find aboutUser
-    product.aboutUser = {} 
+
     res.send(product)
 }
 

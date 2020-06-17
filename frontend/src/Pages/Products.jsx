@@ -4,6 +4,7 @@ import { ProductContext } from '../contexts/ProductContext';
 import ProductService from '../services/ProductService'
 import Filters from '../cmps/Filters'
 import { UserContext } from '../contexts/UserContext';
+import Loader from '../cmps/Loader'
 
 
 
@@ -15,7 +16,6 @@ export default function ProductsPage() {
 
     async function load(filterBy) {
             try {
-                console.log('test',filterBy)
                 const products = await ProductService.query(filterBy);
                 dispatch({ type: 'SET_PRODUCTS',products })
 
@@ -37,10 +37,13 @@ export default function ProductsPage() {
 
 
     return (
-        <div>
+        <div className="flex1">
         <Filters ></Filters>
-            {products&&products.length > 0 &&
-                <ProductList listMode='list' products={products}></ProductList>}
+            {products&&products.length > 0 ?
+                <ProductList listMode='list' products={products}></ProductList>:
+                <Loader></Loader>
+            
+            }
         </div>
     )
 }

@@ -21,6 +21,10 @@
 @import "components/filters.scss";
 @import "components/shopHeader.scss";
 @import "components/ProductEdit.scss";
+@import "components/login.scss";
+@import "components/Footer.scss";
 
 //Pages
-@import "views/wishlist"
+@import "views/wishlist";
+@import "views/cart";
+@import "views/FAQ";

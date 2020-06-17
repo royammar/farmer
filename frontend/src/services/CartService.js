@@ -5,7 +5,8 @@ export default {
     toggleItemToCart,
     itemFromCart,
     getCart,
-    saveOrder
+    saveOrder,
+    RemoveitemFromCart
 }
 
 async function toggleItemToCart(item) {
@@ -29,6 +30,11 @@ async function getCart(){
  
  function itemFromCart(itemId) {
     const item=StorageService.get('cart',itemId)
+    return item
+    } 
+
+ function RemoveitemFromCart(itemId) {
+    const item=StorageService.remove('cart',itemId)
     return item
     } 
 

@@ -6,7 +6,7 @@ import third from '../styles/imgs/3-3.png'
 
 export default function Steps() {
     return (
-        <div className="steps container flex column justify-center ">
+        <div className="steps flex column justify-center ">
             <p className="main-headline">How it works?</p>
 
             <div className="cards flex column align-center">
@@ -15,20 +15,22 @@ export default function Steps() {
                 <div className="card flex column align-center">
                     <img src={second}></img>
 
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p>Just add the items you want to the cart and complete the purchase.
+                      
+                    </p>
 
                 </div>
 
                 <div className="card flex column align-center">
                     <img src={third}></img>
 
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p>The Seller will contact you as soon as your order is ready</p>
                 </div>
 
                 <div className="card flex column align-center">
                     <img src={first}></img>
 
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p>Enjoy your fresh order! don't forget to tell all your friends and family</p>
                 </div>
             </div >
         </div >

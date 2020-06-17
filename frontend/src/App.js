@@ -10,6 +10,10 @@ import ProductContextProvider from './contexts/ProductContext'
 import UserContextProvider from './contexts/UserContext';
 import Cart from './Pages/Cart';
 import Shop from './Pages/Shop';
+import Login from './Pages/Login';
+import SignUp from './Pages/SignUp';
+import FAQ from './Pages/FAQ';
+import Footer from './cmps/Footer';
 
 
 
@@ -27,8 +31,12 @@ function App() {
           <Route path="/products" component={Products} exact></Route>
           <Route path="/wishlist" component={WishList} exact></Route>
           <Route path="/cart" component={Cart} exact></Route>
+          <Route path="/login" component={Login} exact></Route>
+          <Route path="/signup" component={SignUp} exact></Route>
+          <Route path="/faq" component={FAQ} exact></Route>
           <Route path="/shop/:id" component={Shop} exact></Route>
         </Switch>
+        <Footer></Footer>
        </ProductContextProvider>
        </UserContextProvider>
       </Router>

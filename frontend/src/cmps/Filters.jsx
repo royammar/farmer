@@ -40,7 +40,7 @@ export default function Filters({ setFilterBy, props }) {
 
         <div className="filters container flex justify-center">
             <div className="toggle-switch flex">
-                <div className="filter-title">vegtebales</div>
+                <div className="filter-title">vegetables</div>
                 <div>
                     <input type="checkbox" className="toggle-switch-checkbox" name="vegtabels" id="veg" checked={checkedItems.vegtabels} onChange={setFilters} />
                     <label className="toggle-switch-label" htmlFor="veg">
@@ -50,7 +50,7 @@ export default function Filters({ setFilterBy, props }) {
                 </div>
             </div>
             <div className="toggle-switch flex ">
-                <div className="filter-title">fruit</div>
+                <div className="filter-title">fruits</div>
                 <input type="checkbox" className="toggle-switch-checkbox" name="fruits" id="fruit" checked={checkedItems.fruits} onChange={setFilters} />
                 <label className="toggle-switch-label" htmlFor="fruit">
                     <span className="toggle-switch-inner"></span>
@@ -66,7 +66,7 @@ export default function Filters({ setFilterBy, props }) {
                 </label>
             </div>
             <div className="toggle-switch flex ">
-                <div className="filter-title">star</div>
+                <div className="filter-title">specials</div>
                 <input type="checkbox" className="toggle-switch-checkbox" id="star" name="special" checked={checkedItems.special} onChange={setFilters} />
                 <label className="toggle-switch-label" htmlFor="star">
                     <span className="toggle-switch-inner"></span>

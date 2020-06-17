@@ -82,6 +82,7 @@ async function update(user) {
 async function add(user) {
     const collection = await dbService.getCollection('user')
     try {
+        user.shopId=''
         await collection.insertOne(user);
         return user;
     } catch (err) {

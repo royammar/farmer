@@ -1,22 +1,16 @@
 import HttpService from './HttpService';
 
 export default {
-    //   add,
+    add,
     query,
-    put
-    // remove
+    put,
+    remove
 };
 
 
 async function query(filterBy = null) {
     let str=''
-
-    console.log(filterBy);
-    
     if ( (!filterBy.label||filterBy.label.length===0 )  && !filterBy.title) {
-        
-        console.log('stop here');
-        
         return HttpService.get('product');
     }
   
@@ -33,27 +27,30 @@ async function query(filterBy = null) {
  
     
     return HttpService.get(`product?${str}`);
-    // const productsToRender=await products
-    // return productsToRender
 }
 
 
-// function remove(productId) {
-//     return products.filter(product => product._id !== productId)
-//     //   return HttpService.delete(`review/${reviewId}`);
-// }
+function remove(productId) {
+
+    return HttpService.delete(`product/${productId}`);
+}
 
 
-// async function add(review) {
-//   const addedReview  = await HttpService.post(`review`, review);
-//   return  addedReview
-// }
+
+
 
 
 async function put(editedproduct) {
     
     const productToEdit = await HttpService.put(`product/${editedproduct._id}`, editedproduct);
-
     return productToEdit
+}
+
+
+async function add(newProduct) {
+    
+    const product = await HttpService.post('product', newProduct);
+
+    return product
 
 }

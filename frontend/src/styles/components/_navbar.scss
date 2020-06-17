@@ -140,6 +140,24 @@
             max-width: 24px;
         }
 
+        
+   
+        .avatar-circle{
+            width: 28px;
+            height: 28px;
+            background-color: lightcoral;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .avatar{
+                color: white;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+    
+        }
+
         .nav{
             position: relative;
 
@@ -163,6 +181,7 @@
                 width: 22px;
         
                 }
+
 
         }
      
@@ -229,7 +248,7 @@
     .line{
         width: 30px;
         height: 5px;
-        background-color: #ecf0f1;
+        background-color: black;
         display: block;
         margin: 6px auto;
         transition: all 0.3s ease-in-out;
@@ -248,3 +267,36 @@
         transform: translateY(-11px) rotate(-45deg);
       }
 
+
+      .navbar-menu{
+        position: absolute;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        padding: 5px;
+       
+      
+        .logout,
+        .my-shop{
+            margin-top: 5px;
+            margin-right: 14px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-family: inherit;
+            text-align: center;
+            &:hover{
+            color: $clr1;
+            }
+
+        }
+        .seprator{
+
+            width: 100%;
+            height: 1px;
+            border: 0px;
+            background: rgba(219, 219, 219, 0.7);
+
+        }
+      }

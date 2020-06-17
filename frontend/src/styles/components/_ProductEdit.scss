@@ -1,14 +1,59 @@
 .edit{
-position: absolute;
-height: 550px;
-width: 300px;
-top: 80vh;
-left: calc(50% - 150px);
-// margin: auto;
-border: 1px solid lightgray;
-z-index: 3000;
-background-color: white;
-padding: 10px;
+    height: 750px;
+    width: 395px;
+    left: calc(50% - 150px);
+    border: 1px solid lightgray;
+    z-index: 3000;
+    background-color: white;
+    padding: 10px;
+    position: fixed;
+    top: 15vh;
+    border-radius: 2%;
+
+    .close{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    font-size: 17px;
+}
+    label  {
+        align-self: flex-start;
+        padding: 5px;
+        text-transform: uppercase;
+        font-weight: bold;
+    margin: 0 15px;
+    }
+
+    input,select{
+        width: 90%;
+        padding: 10px;
+        font-size: 16px;
+        text-transform: capitalize;
+        margin: 0 10px;
+    }
+
+    img{
+        border: 1px solid lightgray;
+        margin: 25px 0px;
+        min-height: 280px;
+        max-width: 90%;
+    }
 
 
+
+
+    .save-btn{
+        width: 90%;
+        padding: 5px;  
+        border: none;
+        cursor: pointer;
+        color: white;
+        background-color: $clr2;
+        font-size: 18px;
+        font-weight: bold;
+
+    }
 }

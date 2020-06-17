@@ -1,0 +1,44 @@
+.submit-btn{
+    font-size: 18px;
+    background-color: $clr2;
+    color: white;
+    text-transform: uppercase;
+    border:none;
+    padding: 10px;
+    font-weight: 500;
+    width: 222px;
+    cursor: pointer;
+    &:hover{
+        background-color: $clr3;
+        // color: black;
+
+    }
+margin-top: 18px;
+}
+
+.total{
+    background-color: #fec034;
+    padding: 8px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    height: 41px;
+    align-self: flex-start;
+
+}
+
+.summary{
+    margin-right: 30px;
+    border: 1px solid lightgray;
+    padding: 14px;
+.summary-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid lightgray;
+}
+
+
+}

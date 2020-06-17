@@ -43,7 +43,9 @@ app.use('/api/product', productRoutes)
 app.use('/api/order', orderRoutes)
 app.use('/api/shop', shopRoutes)
 connectSockets(io)
-
+app.get('/*',function(req,res){
+    res.sendFile(path.resolve(__dirname,'public/index.html'))
+})
 
 
 const logger = require('./services/logger.service')

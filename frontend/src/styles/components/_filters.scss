@@ -1,6 +1,7 @@
 .filters {
 
 padding-top:12vh;
+margin-bottom:80px;
 .toggle-switch {
   position: relative;
   // width: 100px;
@@ -10,6 +11,7 @@ padding-top:12vh;
   vertical-align: middle;
   text-align: left;
   margin: 0 10px;
+
 
   @include for-normal-layout {
     margin: 0 20px;
@@ -130,3 +132,9 @@ padding-top:12vh;
 
 
  
+.filter-title{
+
+text-transform: uppercase;
+text-align: center;
+
+}
