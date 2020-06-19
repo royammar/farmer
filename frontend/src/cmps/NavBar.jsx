@@ -23,6 +23,7 @@ export default function NavBar(props) {
     const location = useLocation();
     useEffect(() => {
         setCurrPatch(location.pathname)
+        setToggle('close-menu')
   
   }, [location]);
 

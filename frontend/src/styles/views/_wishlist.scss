@@ -1,3 +1,22 @@
 .wishlist{
 padding-top: 12vh;
 }
+
+
+.emptyCart{
+background-image: url(https://tyjara.com/assets/site/img/empty-cart.png);
+background-position: center;
+background-size: contain;
+background-repeat: no-repeat;
+height: 80vh;
+width: 100%;
+}
+
+
+.emptyWishList{
+    background-image: url(https://tyjara.com/assets/site/img/empty-wishlist.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80vh;
+}

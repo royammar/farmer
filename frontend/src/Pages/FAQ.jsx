@@ -21,7 +21,7 @@ export default function FAQ() {
     },
     {
         id: 3,
-        question: 'Why not to order from the supermarket',
+        question: 'Why not just buy from the supermarket?',
         answer: 'Nice one :) Well yes, you will probably pay less but you will not find that quality in your local supermarket.Guaranty!',
         isOpen: false
     }, {
@@ -57,9 +57,9 @@ export default function FAQ() {
             <h2 className="FAQ-header">Frequently Asked Questions</h2>
             {faqs.map((faq) =>
                 <div key={faq.id} className="question-answer">
-                    <div className="headline flex justify-center space-between">
-                        <p className="question">{faq.question}</p>
-                        <button className="btn" onClick={() => toggleText(faq.id)}>{faq.isOpen === true ? <img className="minus" src={minus}></img> : <img className="plus" src={plus}></img>}</button>
+                    <div className="headline flex justify-center space-between" onClick={() => toggleText(faq.id)}>
+                        <p className="question" >{faq.question}</p>
+                        <button className="btn" >{faq.isOpen === true ? <img className="minus" src={minus}></img> : <img className="plus" src={plus}></img>}</button>
                     </div>
                     <p className={`answer ${faq.isOpen === true ? 'show' : 'hide'}`} >{faq.answer}</p>
                 </div>

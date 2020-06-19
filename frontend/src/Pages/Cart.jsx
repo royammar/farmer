@@ -33,7 +33,7 @@ export default function Cart(props) {
     }
     return (
 
-        <div className='wishlist flex flex1 justify-center align-center'>
+        <div className='wishlist flex flex1 justify-center align-center wrap'>
             {cart && cart.length > 0 ?
                 <ProductList listMode='cart' products={cart}></ProductList> :
                 <EmptyCart></EmptyCart>}

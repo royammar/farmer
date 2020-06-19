@@ -120,7 +120,7 @@
 
     .right-side-nav {
         order: 1;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-bottom: 30px;
         @include for-normal-layout {
             margin-bottom: 0px;
