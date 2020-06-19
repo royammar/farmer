@@ -34,9 +34,6 @@ export default function Cart(props) {
     return (
 
         <div className='wishlist flex flex1 justify-center align-center wrap'>
-            {cart && cart.length > 0 ?
-                <ProductList listMode='cart' products={cart}></ProductList> :
-                <EmptyCart></EmptyCart>}
             {cart.length > 0 &&
                 <div className="summary">
                         <h4 className="summary-title">Summary</h4>
@@ -47,6 +44,9 @@ export default function Cart(props) {
                     <button className="submit-btn" onClick={handleSubmitOrder}>Submit order</button>
                 </div>
             }
+            {cart && cart.length > 0 ?
+                <ProductList listMode='cart' products={cart}></ProductList> :
+                <EmptyCart></EmptyCart>}
 
         </div>
 

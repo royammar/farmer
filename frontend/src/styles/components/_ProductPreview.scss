@@ -56,12 +56,12 @@
         .location-img {
             width: 10%;
             @include for-normal-layout {
-                width: 6%;
+                width: 8%;
             }
         }
         .location-text {
             color: grey;
-            font-size: 12px;
+            font-size: 14px;
             @include for-normal-layout {
                 font-size: 14px;
             }
