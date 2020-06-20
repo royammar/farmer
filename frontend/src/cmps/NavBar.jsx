@@ -85,9 +85,9 @@ export default function NavBar(props) {
 
                 <div className={`right-side-nav flex align-center ${toggle}`}>
                  {currpatch==='/products'&&<div className="main-search flex"><input onChange={handleInput} className="search" type="search" placeholder="Search"></input><img className="search-img" src={Search}></img></div>}  
-                 {loggedInUser? <div className="avatar-circle"><span className="avatar" onClick={handleClick}>{loggedInUser.username.substring(0,1)} {showMenu&&<NavBarMenu loggedInUser={loggedInUser} handleLogOut={handleLogOut} createShop={createShop}></NavBarMenu>}</span></div>:<Link className="flex nav" to="/login" > <img src={User}></img></Link>}
-                    <Link className="flex nav" to="/wishlist" ><img src={Heart}/><span className='wishlist-amount flex align-center justify-center'>{wishlist.length}</span></Link>
-                    <Link className="flex nav" to="/cart" ><img src={Cart}/><span className='cart-amount flex align-center justify-center'>{cart.length}</span></Link>
+                 {loggedInUser? <div className="avatar-circle"><span className="avatar" onClick={handleClick}>{loggedInUser.username.substring(0,1)} {showMenu&&<NavBarMenu loggedInUser={loggedInUser} handleLogOut={handleLogOut} createShop={createShop}></NavBarMenu>}</span></div>:<Link className="flex nav nav-icon" to="/login" > <img src={User}></img></Link>}
+                    <Link className="flex nav nav-icon" to="/wishlist" ><img src={Heart}/><span className='wishlist-amount flex align-center justify-center'>{wishlist.length}</span></Link>
+                    <Link className="flex nav nav-icon" to="/cart" ><img src={Cart}/><span className='cart-amount flex align-center justify-center'>{cart.length}</span></Link>
                 </div>
             </div>
         )
