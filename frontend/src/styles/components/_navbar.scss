@@ -120,15 +120,15 @@
 
     .right-side-nav {
         order: 1;
-        justify-content: space-between;
+        // justify-content: space-between;
         margin-bottom: 30px;
+        cursor: pointer;
         @include for-normal-layout {
+            flex: 1;
             margin-bottom: 0px;
             order: 2;
             justify-content: flex-end;
         }
-        cursor: pointer;
-        flex: 1;
 
         :not(:last-child) {
             margin-right: 14px;
